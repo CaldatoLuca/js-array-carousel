@@ -19,6 +19,10 @@ for (let i = 0; i < imagesList.length; i++) {
   img.src = `./img/${imagesList[i]}`;
   img.alt = `Immagine ${i + 1}`;
 
+  if (i === 0) {
+    item.classList.add("active");
+  }
+
   //inserisco le img in item
   item.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
 
