@@ -9,6 +9,7 @@ const imagesList = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"];
 const imagesContainer = document.querySelector(".items");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
+let counter = 0;
 
 //!ciclo per assegnaziojne immagini all' elemento HTML
 for (let i = 0; i < imagesList.length; i++) {
@@ -34,7 +35,20 @@ for (let i = 0; i < imagesList.length; i++) {
 
 //inizializzo una variabile che raccoglie tutte le mie immagini .items (simile ad un array)
 const images = document.querySelectorAll(".item");
+
+//! click su aventi
 prev.addEventListener(`click`, function () {
-  images[0].classList.remove("active");
-  images[1].classList.add("active");
+  if (counter < images.length - 1) {
+    images[counter].classList.remove("active");
+    counter++;
+    images[counter].classList.add("active");
+  }
+});
+
+next.addEventListener(`click`, function () {
+  if (counter > 0) {
+    images[counter].classList.remove("active");
+    counter--;
+    images[counter].classList.add("active");
+  }
 });
