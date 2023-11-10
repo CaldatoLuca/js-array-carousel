@@ -22,7 +22,7 @@ for (let i = 0; i < imagesList.length; i++) {
   //inserisco le img in item
   item.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
 
-  //inserisco le item nel mio contenitore di immagini
+  //inserisco item nel mio contenitore di immagini
   imagesContainer.append(item);
 }
 

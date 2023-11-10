@@ -24,11 +24,11 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 
 1. Creare un array con le stringhe dei nomi delle immagini
 
-2. creare la variabile che si collega all' elemnto HTML che contiene l' immagine
+2. creare la variabile che si collega all' elemnto HTML che contiene le immagini
 
 3. Creare un ciclo `for` per inserire nell' HTML le immagini (`.innerHTML`) o (`.append`)
 
-4. Creo nel ciclo l' elemento div (a cui dare la classe item) e l' elemenbto img (a cui dare un `src` in base al suo nome)
+4. Creo nel ciclo l' elemento div (a cui dare la classe item) e l' elemento img (a cui dare un `src` in base al suo nome)
 
 5. Inserisco img in item e, succesivamente, item nel contenitore di immagini
 
