@@ -19,6 +19,10 @@
   height: 300px;
 }
 
+.items ::selection {
+  background: transparent;
+}
+
 .item {
   height: 100%;
   display: none;
