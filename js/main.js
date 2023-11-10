@@ -42,6 +42,10 @@ prev.addEventListener(`click`, function () {
     images[counter].classList.remove("active");
     counter++;
     images[counter].classList.add("active");
+  } else if (counter === Number(images.length) - 1) {
+    images[counter].classList.remove("active");
+    counter = 0;
+    images[counter].classList.add("active");
   }
 });
 
@@ -49,6 +53,10 @@ next.addEventListener(`click`, function () {
   if (counter > 0) {
     images[counter].classList.remove("active");
     counter--;
+    images[counter].classList.add("active");
+  } else if (counter === 0) {
+    images[counter].classList.remove("active");
+    counter = images.length - 1;
     images[counter].classList.add("active");
   }
 });
