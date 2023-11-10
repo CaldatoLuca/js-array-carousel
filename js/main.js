@@ -7,21 +7,23 @@
 // variabili
 const imagesList = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"];
 const imagesContainer = document.querySelector(".items");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
 
 //!ciclo per assegnaziojne immagini all' elemento HTML
 for (let i = 0; i < imagesList.length; i++) {
   // creo l'elemento blocco immagine
   const item = document.createElement("div");
   item.classList.add("item");
-
-  //creo l'elemento immagine
-  const img = document.createElement("img");
-  img.src = `./img/${imagesList[i]}`;
-  img.alt = `Immagine ${i + 1}`;
-
+  //se è la prima img inserisco anche la classe active per renderla visibile
   if (i === 0) {
     item.classList.add("active");
   }
+
+  //creo l'elemento immagine e assegno src e alt
+  const img = document.createElement("img");
+  img.src = `./img/${imagesList[i]}`;
+  img.alt = `Immagine ${i + 1}`;
 
   //inserisco le img in item
   item.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
@@ -30,4 +32,9 @@ for (let i = 0; i < imagesList.length; i++) {
   imagesContainer.append(item);
 }
 
-console.log(imagesContainer);
+//inizializzo una variabile che raccoglie tutte le mie immagini .items (simile ad un array)
+const images = document.querySelectorAll(".item");
+prev.addEventListener(`click`, function () {
+  images[0].classList.remove("active");
+  images[1].classList.add("active");
+});

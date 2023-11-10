@@ -34,4 +34,7 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 
 6. Cambiare (tramite evento click) la posizione della classe `.active` lungo l' array per far avvenire il cambio di immagine al click
 
-   NB fare l' operazione opposta per la freccia che porta all' immagine precendente
+   NB
+   raccogliere tutte le immagini in una variabile dopo il ciclo `document.querySelectorAll(".classe");` (tutti gli elementi con .classe)
+   prendere entrambe le freccie con variabili nel mio js e farci due eventi diversi (eventListener)
+   fare l' operazione opposta per la freccia che porta all' immagine precendente
