@@ -20,7 +20,7 @@ for (let i = 0; i < imagesList.length; i++) {
   img.alt = `Immagine ${i + 1}`;
 
   //inserisco le img in item
-  item.append(img);
+  item.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
 
   //inserisco le item nel mio contenitore di immagini
   imagesContainer.append(item);
