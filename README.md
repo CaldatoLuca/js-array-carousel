@@ -51,3 +51,8 @@ Al click sulla thumbnail, viene visualizzata l'immagine selezionata;
    raccogliere tutte le immagini in una variabile dopo il ciclo `document.querySelectorAll(".classe");` (tutti gli elementi con .classe)
    prendere entrambe le freccie con variabili nel mio js e farci due eventi diversi (eventListener)
    fare l' operazione opposta per la freccia che porta all' immagine precendente
+
+7. BONUS 1 in entrambi gli eventi andare ad inserire delle condizioni che portino il contatore alla situazione di partenza (diversa a seconda del caso)
+
+8. BONUS 2 usare l emento che racchiude tuttr le immagini per creare la colonna a destra, all' interno degli eventi gestire le classi che determinano il bordo e la non opacità (simile alla classe active)
+   Probabilente alla classe active aggiungo opacità nulla e bordo bianco mentre alla classe item opacità scura
