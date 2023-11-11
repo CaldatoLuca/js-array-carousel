@@ -54,5 +54,6 @@ Al click sulla thumbnail, viene visualizzata l'immagine selezionata;
 
 7. BONUS 1 in entrambi gli eventi andare ad inserire delle condizioni che portino il contatore alla situazione di partenza (diversa a seconda del caso)
 
-8. BONUS 2 usare l emento che racchiude tuttr le immagini per creare la colonna a destra, all' interno degli eventi gestire le classi che determinano il bordo e la non opacità (simile alla classe active)
-   Probabilente alla classe active aggiungo opacità nulla e bordo bianco mentre alla classe item opacità scura
+8. BONUS 2 usare l emento che racchiude tuttr le immagini per creare la colonna a destra, all' interno degli eventi gestire le classi che determinano il bordo e la non opacità (simile alla classe active).
+
+NB Probabilente alla classe active aggiungo opacità nulla e bordo bianco mentre alla classe item opacità scura
