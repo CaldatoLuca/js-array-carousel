@@ -57,7 +57,7 @@ const images = document.querySelectorAll(".item");
 //inizializzo una variabile che raccoglie tutte le mie immagini di .all
 const imagesAll = document.querySelectorAll(".all img");
 
-//! click su aventi
+//! click su avanti
 next.addEventListener(`click`, function () {
   if (counter < images.length - 1) {
     // rimuovo le classi active
@@ -77,6 +77,7 @@ next.addEventListener(`click`, function () {
   }
 });
 
+//! click su precedente
 prev.addEventListener(`click`, function () {
   if (counter > 0) {
     // rimuovo le classi active
@@ -94,4 +95,100 @@ prev.addEventListener(`click`, function () {
     images[counter].classList.add("active");
     imagesAll[counter].classList.add("thumbnail-active");
   }
+});
+
+//! click su singola thumnail
+imagesAll[0].addEventListener(`click`, function () {
+  images[0].classList.add("active");
+  imagesAll[0].classList.add("thumbnail-active");
+
+  images[1].classList.remove("active");
+  imagesAll[1].classList.remove("thumbnail-active");
+
+  images[2].classList.remove("active");
+  imagesAll[2].classList.remove("thumbnail-active");
+
+  images[3].classList.remove("active");
+  imagesAll[3].classList.remove("thumbnail-active");
+
+  images[4].classList.remove("active");
+  imagesAll[4].classList.remove("thumbnail-active");
+
+  counter = 0;
+});
+
+imagesAll[1].addEventListener(`click`, function () {
+  images[1].classList.add("active");
+  imagesAll[1].classList.add("thumbnail-active");
+
+  images[0].classList.remove("active");
+  imagesAll[0].classList.remove("thumbnail-active");
+
+  images[2].classList.remove("active");
+  imagesAll[2].classList.remove("thumbnail-active");
+
+  images[3].classList.remove("active");
+  imagesAll[3].classList.remove("thumbnail-active");
+
+  images[4].classList.remove("active");
+  imagesAll[4].classList.remove("thumbnail-active");
+
+  counter = 1;
+});
+
+imagesAll[2].addEventListener(`click`, function () {
+  images[2].classList.add("active");
+  imagesAll[2].classList.add("thumbnail-active");
+
+  images[1].classList.remove("active");
+  imagesAll[1].classList.remove("thumbnail-active");
+
+  images[0].classList.remove("active");
+  imagesAll[0].classList.remove("thumbnail-active");
+
+  images[3].classList.remove("active");
+  imagesAll[3].classList.remove("thumbnail-active");
+
+  images[4].classList.remove("active");
+  imagesAll[4].classList.remove("thumbnail-active");
+
+  counter = 2;
+});
+
+imagesAll[3].addEventListener(`click`, function () {
+  images[3].classList.add("active");
+  imagesAll[3].classList.add("thumbnail-active");
+
+  images[1].classList.remove("active");
+  imagesAll[1].classList.remove("thumbnail-active");
+
+  images[2].classList.remove("active");
+  imagesAll[2].classList.remove("thumbnail-active");
+
+  images[0].classList.remove("active");
+  imagesAll[0].classList.remove("thumbnail-active");
+
+  images[4].classList.remove("active");
+  imagesAll[4].classList.remove("thumbnail-active");
+
+  counter = 3;
+});
+
+imagesAll[4].addEventListener(`click`, function () {
+  images[4].classList.add("active");
+  imagesAll[4].classList.add("thumbnail-active");
+
+  images[1].classList.remove("active");
+  imagesAll[1].classList.remove("thumbnail-active");
+
+  images[2].classList.remove("active");
+  imagesAll[2].classList.remove("thumbnail-active");
+
+  images[3].classList.remove("active");
+  imagesAll[3].classList.remove("thumbnail-active");
+
+  images[0].classList.remove("active");
+  imagesAll[0].classList.remove("thumbnail-active");
+
+  counter = 4;
 });
