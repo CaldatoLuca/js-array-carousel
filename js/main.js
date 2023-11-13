@@ -192,3 +192,42 @@ imagesAll[4].addEventListener(`click`, function () {
 
   counter = 4;
 });
+
+/* ?CORREZIONE
+
+! const path = 'img/';  salvo la path delle immagini, posso cambiarla da qui se serve
+
+! rimuovo / cambio solo il valore di counter in base alle condizioni / aggiungo (rimuovere e aggiungere non si ripete, lo faccio sempre)
+  next.addEventListener(`click`, function () {
+    images[counter].classList.remove("active"); //immagine principale
+    imagesAll[counter].classList.remove("thumbnail-active"); //immagine thumbnail
+
+      if (counter === Number(images.length) - 1) {
+         counter = 0;
+       } else {
+           counter++;
+        }
+
+    images[counter].classList.add("active"); //immagine principale
+    imagesAll[counter].classList.add("thumbnail-active"); //immagine thumbnail
+});
+
+  prev.addEventListener(`click`, function () {
+    images[counter].classList.remove("active"); //immagine principale
+    imagesAll[counter].classList.remove("thumbnail-active"); //immagine thumbnail
+
+      if (counter === 0) {
+         counter = images.length - 1;
+       } else {
+           counter--;
+        }
+
+    images[counter].classList.add("active"); //immagine principale
+    imagesAll[counter].classList.add("thumbnail-active"); //immagine thumbnail
+});
+
+
+
+
+
+*/
